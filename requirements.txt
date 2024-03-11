@@ -1,0 +1,6 @@
+gymnasium
+IPython
+pandas
+pettingzoo
+plotly
+pygame
