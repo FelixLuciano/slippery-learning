@@ -5,4 +5,4 @@ pandas
 pettingzoo
 plotly
 pygame
-
+nbformat
