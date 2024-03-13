@@ -51,3 +51,22 @@ class Sarsa:
         data_rewards = pd.DataFrame({'Episodes': range(1, len(rewards_per_episode)+1), 'Rewards': rewards_per_episode})
         data_actions = pd.DataFrame({'Episodes': range(1, len(actions_per_episode)+1), 'Actions': actions_per_episode})
         return self.q_table, data_rewards, data_actions
+
+    def save_txt(self, filename):
+        np.savetxt(filename, self.q_table, delimiter=",")
+    
+    def load_txt(self, filename):
+        self.q_table = np.loadtxt(filename, delimiter=",")
+        
+        return self
+
+    def test(self):
+        state, _ = self.env.reset()
+        done = truncated = False
+        reward = 0
+
+        while not done:
+            action = np.argmax(self.q_table[state])
+            state, reward, done, truncated, _ = self.env.step(action)
+
+        return reward == 1 and not truncated
