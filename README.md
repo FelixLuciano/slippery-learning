@@ -1,3 +1,16 @@
 # Slippery Learning ⛸️🏞️
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/inGUJX6C)
+
+[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+
+![](https://gymnasium.farama.org/_images/frozen_lake.gif)
+
+Este ambiente de treinamento envolve cruzar um lago congelado sem cair nos buracos congelantes. O agente deve aprender a evitar ir sempre na direção desejada por conta do gelo escorregadio.
+
+## Dependências
+
+```bash
+python -m venv env
+source env/Scripts/activate
+pip install -r requirements.txt
+```
