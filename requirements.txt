@@ -1,0 +1,9 @@
+gymnasium
+IPython
+kaleido
+numpy
+pandas
+pettingzoo
+plotly
+pygame
+nbformat
